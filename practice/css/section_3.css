@@ -1,0 +1,99 @@
+.section-3 {
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 상단 헤더 (제목 + 더보기) */
+.section-3-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.best-title {
+    font-size: 2rem;
+    /* 32px */
+    font-weight: 800;
+}
+
+.btn-more {
+    font-size: 0.875rem;
+    /* 14px */
+    color: #888;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.btn-more:hover {
+    color: #3B82F6;
+}
+
+/* 캐러셀 컨테이너 */
+.carousel-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 3rem;
+}
+
+/* 개별 가구 카드 */
+.item-card {
+    width: 300px;
+    height: 200px;
+    /* 크기 유지 */
+    flex-shrink: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #EEE;
+}
+
+.item-card img {
+    width: 100%;
+    height: 100%;
+    /* 비율 유지하며 꽉 채움 */
+    object-fit: cover;
+    object-position: center 70%;
+    transition: transform 0.5s;
+}
+
+.item-card:hover img {
+    transform: scale(1.1);
+    /* 호버 시 살짝 확대 */
+}
+
+/* 무한 루프 애니메이션 
+   이미지 묶음이 절반(50%) 지났을 때 0으로 순간이동 시켜야 끊기지 않음 */
+@keyframes scrollInfinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 0.75rem)); } /* 절반 이동 (gap 보정) */
+}
+
+.track-right {
+    animation: scrollInfinite 20s linear infinite;
+}
+
+.track-left {
+    animation: scrollInfinite 20s linear infinite reverse; /* 반대 방향 */
+}
+
+/* --- 반응형 (px 단위 적용) --- */
+@media (max-width: 768px) {
+    .item-card {
+        width: 240px; /* 240px */
+        height: 160px; /* 160px */
+    }
+    
+    .carousel-track { gap: 1rem; }
+}

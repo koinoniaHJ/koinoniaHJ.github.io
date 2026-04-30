@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holo-Home</title>
+    <!-- 구글 폰트(Noto Sans KR) 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section_1.css">
+    <link rel="stylesheet" href="css/section_2.css">
+    <link rel="stylesheet" href="css/section_3.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- 로고 영역 -->
+            <h1 class="logo">
+                <a href="#">Holo-Home</a>
+            </h1>
+            <!-- 체크박스 (화면에는 안 보임) -->
+            <input type="checkbox" id="menu-trigger">
+            <!-- 삼선 아이콘 (모바일 전용) -->
+            <label for="menu-trigger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- 메뉴 영역 -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#services">서비스 소개</a></li>
+                    <li><a href="#best-items">인기 가구</a></li>
+                    <li><a href="#">홀로홈 가구</a></li>
+                    <li><a href="#">이용 후기</a></li>
+                    <li><a href="https://forms.gle/6yBnym8rw45hNCii9" target="_blank" class="btn-apply">상담 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <div class="section-1-content">
+                <h2 class="main-title">이삿짐은 가볍게,<br>자취 감성은 두껍게.</h2>
+                <p class="sub-title">무거운 가구는 사지 마세요. 당신의 자취 라이프를 가뿐하게 만들어 줄 홀로홈 렌탈 솔루션.</p>
+            </div>
+        </section>
+        <!-- Section 2: 서비스 소개 -->
+        <section class="section-2" id="services">
+            <div class="section-2-content">
+                <h2 class="section-2-title">홀로홈이 제안하는 가뿐한 삶</h2>
+                <div class="feature-container">
+                    <!-- 특징 1 -->
+                    <div class="feature-item">
+                        <div class="icon-box"><i class="fa-solid fa-truck"></i></div>
+                        <h3>가벼운 이사</h3>
+                        <p>더 이상 무거운 가구 때문에 고생하지 마세요.<br />배송부터 회수까지 홀로홈이 책임집니다.</p>
+                    </div>
+                    <!-- 특징 2 -->
+                    <div class="feature-item">
+                        <div class="icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>합리적 비용</h3>
+                        <p>목돈 드는 가구 구매 대신, 월 커피 몇 잔 값으로<br />프리미엄 가구를 내 방에 들여놓으세요.</p>
+                    </div>
+                    <!-- 특징 3 -->
+                    <div class="feature-item">
+                        <div class="icon-box"><i class="fa-solid fa-rotate-right"></i></div>
+                        <h3>자유로운 교체</h3>
+                        <p>취향이 바뀌어도 걱정 없습니다.<br />계약 기간 후에는 언제든 새로운 디자인으로 교체 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-3" id="best-items">
+            <div class="section-3-header">
+                <h2 class="best-title">BEST 가구</h2>
+                <a href="#" class="btn-more">더보기 +</a>
+            </div>
+            <!-- 첫 번째 줄: 오른쪽으로 흐름 -->
+            <div class="carousel-container">
+                <div class="carousel-track track-right">
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item1.jpg" alt="가구1"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item2.jpg" alt="가구2"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item3.jpg" alt="가구3"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item4.jpg" alt="가구4"></a>
+                    </div>
+                    <!-- 무한 루프를 위한 복사본 -->
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item1.jpg" alt="가구1"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item2.jpg" alt="가구2"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item3.jpg" alt="가구3"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item4.jpg" alt="가구4"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 두 번째 줄: 왼쪽으로 흐름 -->
+            <div class="carousel-container">
+                <div class="carousel-track track-left">
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item5.jpg" alt="가구5"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item6.jpg" alt="가구6"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item7.jpg" alt="가구7"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item8.jpg" alt="가구8"></a>
+                    </div>
+                    <!-- 무한 루프를 위한 복사본 -->
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item5.jpg" alt="가구5"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item6.jpg" alt="가구6"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item7.jpg" alt="가구7"></a>
+                    </div>
+                    <div class="item-card">
+                        <a href="#"><img src="./images/item8.jpg" alt="가구8"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <h2 class="footer-logo">Holo-Home</h2>
+                    <nav class="footer-nav">
+                        <a href="#">서비스 소개</a>
+                        <a href="#">인기 가구</a>
+                        <a href="#">이용 후기</a>
+                        <a href="#">개인정보처리방침</a>
+                    </nav>
+                </div>
+                <hr class="footer-divider">
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Holo-Home. All rights reserved.</p>
+                    <div class="footer-contact">
+                        <span>대표: 어드민</span>
+                        <span>이메일: admin@admin.admin</span>
+                        <span>전화: 0000-0000</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
